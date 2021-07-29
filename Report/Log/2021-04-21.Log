@@ -1,0 +1,10 @@
+2021-04-21 15:14:55,473 - bela - ERROR - error message
+2021-04-21 15:14:55,473 - bela - CRITICAL - critical message
+2021-04-21 15:16:01,513 - bela - ERROR - error message
+2021-04-21 15:16:03,091 - bela - CRITICAL - critical message
+2021-04-21 17:22:58,808 - Bela - INFO - MobileText is sendValues!
+2021-04-21 17:26:13,359 - Bela - INFO - MobileText is sendValues!
+2021-04-21 17:26:15,698 - Bela - INFO - VerifyCodeText is sendValues!
+2021-04-21 17:31:01,869 - Bela - INFO - MobileText is sendValues!
+2021-04-21 17:31:02,961 - Bela - INFO - VerifyCodeText is sendValues!
+2021-04-21 17:31:04,601 - Bela - INFO - LoginBtn is click!

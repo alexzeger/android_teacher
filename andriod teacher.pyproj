@@ -1,0 +1,123 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b05c6794-8f63-4632-ae55-4a729e6e2485</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>run.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>andriod teacher</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <TestFramework>unittest</TestFramework>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+    <Folder Include="Public\" />
+    <Folder Include="Public\common\" />
+    <Folder Include="Public\Pages\" />
+    <Folder Include="Public\yc\" />
+    <Folder Include="Report\" />
+    <Folder Include="Report\TestReport\" />
+    <Folder Include="Report\Log\" />
+    <Folder Include="Report\Images\" />
+    <Folder Include="TestCase\" />
+    <Folder Include="Log\" />
+    <Folder Include="Data\" />
+    <Folder Include="Config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\globalconfig.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\__init__.py" />
+    <Compile Include="Public\common\config.ini">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\common\desired_caps.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\common\DoExcel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\common\send_mail.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\common\ReadConfiglni.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\common\Testcaseinfopy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\__init__.py" />
+    <Compile Include="Public\common\__init__.py" />
+    <Compile Include="Public\Pages\BaseView.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\Pages\Rollcall.py" />
+    <Compile Include="Public\Pages\Task.py" />
+    <Compile Include="Public\Pages\Practice1.py" />
+    <Compile Include="Public\Pages\Practice.py" />
+    <Compile Include="Public\Pages\homework.py" />
+    <Compile Include="Public\Pages\teacher.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\Pages\__init__.py" />
+    <Compile Include="Public\yc\start_appium_server.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\yc\run.py" />
+    <Compile Include="Public\yc\device_connect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\__init__.py" />
+    <Compile Include="Log\log.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Log\__init__.py" />
+    <Compile Include="Report\__init__.py" />
+    <Compile Include="run.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Public\Pages\Notice.py" />
+    <Compile Include="TestCase\Test_任务打卡.py" />
+    <Compile Include="TestCase\Test_点名.py" />
+    <Compile Include="TestCase\Test_班级通知.py" />
+    <Compile Include="TestCase\Test_练习库.py" />
+    <Compile Include="TestCase\Test_登录.py" />
+    <Compile Include="TestCase\Test_发布作业.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCase\__init__.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\config.ini" />
+    <Content Include="Data\Data.xls" />
+    <Content Include="Report\TestReport\report.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
