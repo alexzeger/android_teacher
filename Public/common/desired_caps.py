@@ -7,7 +7,7 @@ def desired():
                     'platformName':'Android',
                     'platforversion':'7.1.2',
                     # 设备号
-                    'deviceName':'127.0.0.1:62001',
+                    'deviceName':'emulator-5554',
                     # 包名
                     'appPackage':'com.teacher.boxfairy',
                     # 启动名
