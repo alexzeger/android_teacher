@@ -25,16 +25,18 @@ class Test_u0001(unittest.TestCase):
     def setUp(self):
         self.driver = desired()
         self.driver.implicitly_wait(30)
-        self.Publish = Publish(self.driver)
-        self.Publish.LoginBtnObj(mobileValue)
+
 
     @BeautifulReport.add_test_img('test_case_1')
     # 装饰器，当你没有报错也要截图的话，那么你需要在用例里面调用save_img()方法
+    def test_homework_case_0(self):
+        self.Publish = Publish(self.driver)
+        self.Publish.LoginBtnObj(mobileValue)
+
     def test_homework_case_1(self):
         '''
         单个 跟读练习 单句作业
         '''
-
         self.Publish = Publish(self.driver)
         self.Publish.intohomeworkObj()
         self.Publish.addhomeworkObj()

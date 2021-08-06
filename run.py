@@ -37,4 +37,4 @@ def AutoRun(TestCaseName):
     cc.sendReport(new_report)
 
 if __name__ == "__main__":
-    AutoRun("Test_班级通知.py")
+    AutoRun("Test_发布作业.py")

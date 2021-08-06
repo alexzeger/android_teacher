@@ -5,13 +5,16 @@ ServelUrl ='http://localhost:4723/wd/hub'
 def desired():
     desired_caps ={ # 手机 系统信息
                     'platformName':'Android',
-                    'platforversion':'7.1.2',
+                    'platformVersion': '10',  # 华为真机
+                    #'platforversion':'7.1.2',
                     # 设备号
-                    'deviceName':'emulator-5554',
+                    'deviceName': 'D8H4C19A21002204',
+                    # 'deviceName':'127.0.0.1:62001',
                     # 包名
                     'appPackage':'com.teacher.boxfairy',
                     # 启动名
-                    'appActivity':'com.teacher.boxfairy.mvp.ui.activity.login.LoginActivity',
+                    #'appActivity':'com.teacher.boxfairy.mvp.ui.activity.login.LoginActivity',
+                    'appActivity':'com.teacher.boxfairy.mvp.ui.activity.splash.SplashActivity',
                     'automationName':'Uiautomator2',
                     # 允许输入中文
                     'unicodeKeyboard':True, #使用unicode输入法
