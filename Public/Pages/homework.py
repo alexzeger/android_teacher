@@ -145,7 +145,8 @@ class Publish(BaseView):
 
         self.swipe_elemen(1200,200)
         self.swipe_elemen(1200,200)
-
+        self.swipe_elemen(1200,200)
+        self.swipe_elemen(1200,200)
 
         bookmanyBtn = self.find_element(*self.bookmany)
         bookmanyBtn.click()

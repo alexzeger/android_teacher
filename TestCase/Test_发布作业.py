@@ -32,7 +32,7 @@ class Test_u0001(unittest.TestCase):
     def test_homework_case_0(self):
         self.Publish = Publish(self.driver)
         self.Publish.LoginBtnObj(mobileValue)
-
+        time.sleep(4)
     def test_homework_case_1(self):
         '''
         单个 跟读练习 单句作业
